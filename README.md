@@ -4,6 +4,7 @@
 [![Windows Build status](https://ci.appveyor.com/api/projects/status/github/PeteHaitch/repete?svg=true)](https://ci.appveyor.com/project/PeteHaitch/repete)
 [![](http://www.r-pkg.org/badges/version/repete)](http://www.r-pkg.org/pkg/repete)
 [![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/repete)](http://www.r-pkg.org/pkg/repete)
+[![Coverage Status](https://img.shields.io/codecov/c/github/PeteHaitch/repete/master.svg)](https://codecov.io/github/PeteHaitch/repete?branch=master)
 
 ---
 
