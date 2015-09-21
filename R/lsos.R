@@ -1,8 +1,3 @@
-# A modified version of Dirk Eddelbuetal's impoved ls() function and shortcut
-# (http://stackoverflow.com/q/1358003)
-# TODO: Document
-# TODO: Note that this in turn is a modified version of an R mailing list post
-#
 #' Internal helper function used by lsos().
 #
 #' @param pos An alternative argument to name for specifying the environment as
@@ -33,7 +28,7 @@
                         decreasing = TRUE,
                         head = TRUE,
                         n = 5) {
-  # TODO: s/sapply/vapply/
+
   napply <- function(names, fn) {
     sapply(names, function(x) {
       fn(get(x, pos = pos))
