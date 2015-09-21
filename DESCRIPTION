@@ -1,0 +1,10 @@
+Package: repete
+Title: Peter Hickey's R Code
+Version: 0.0.0.9000
+Authors@R: "Peter Hickey <peter.hickey@gmail.com> [aut, cre]"
+Description: Miscellaneous R functions that I find useful.
+Depends: R (>= 3.2.1)
+License: MIT + file LICENSE
+LazyData: true
+URL: https://github.com/PeteHaitch/repete
+BugReports: https://github.com/PeteHaitch/repete/issues
