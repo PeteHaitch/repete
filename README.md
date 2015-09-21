@@ -16,7 +16,7 @@ useful to me and that I otherwise find myself *repete*dly re-writing. Cue groans
 
 
 ```r
-devtools::install_github("gaborcsardi/alexr")
+devtools::install_github("PeteHaitch/repete")
 ```
 
 ## License
