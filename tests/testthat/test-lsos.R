@@ -13,12 +13,29 @@ test_that("lsos() works", {
   # https://github.com/PeteHaitch/repete/issues/1)
   print(lsos(env))
   print(R.Version()$arch)
-  expect_identical(lsos(env),
-                   data.frame(Name = c("y", "x", "z"),
-                              Type = c("data.frame", "matrix", "integer"),
-                              Size = c(1840, 600, 88),
-                              PrettySize = c("1.8 Kb", "600 bytes", "88 bytes"),
-                              Rows = c(10, 25, 10),
-                              Columns = c(2, 4, NA),
-                              stringsAsFactors = FALSE))
+  val <- lsos(env)
+  # The size of objects differs on 32-bit and 64-bit platforms. I think this
+  # conditional handles the situation appropriately (although it might fall
+  # over on Solaris?)
+  if (identical(R.Version()$arch, "x86_64")) {
+    expect_identical(val,
+                     data.frame(Name = c("y", "x", "z"),
+                                Type = c("data.frame", "matrix", "integer"),
+                                Size = c(1840, 600, 88),
+                                PrettySize = c("1.8 Kb", "600 bytes", "88 bytes"),
+                                Rows = c(10, 25, 10),
+                                Columns = c(2, 4, NA),
+                                stringsAsFactors = FALSE))
+  } else if (identical(R.Version()$arch, "i386")) {
+    expect_identical(val,
+                     data.frame(Name = c("y", "x", "z"),
+                                Type = c("data.frame", "matrix", "integer"),
+                                Size = c(1112, 512, 72),
+                                PrettySize = c("1.1 Kb", "512 bytes", "72 bytes"),
+                                Rows = c(10, 25, 10),
+                                Columns = c(2, 4, NA),
+                                stringsAsFactors = FALSE))
+  } else {
+    stop("Unexpected architecture")
+  }
 })
