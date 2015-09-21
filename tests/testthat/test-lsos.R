@@ -12,6 +12,7 @@ test_that("lsos() works", {
   # TODO: Remove once test fixed on windows (see
   # https://github.com/PeteHaitch/repete/issues/1)
   print(lsos(env))
+  print(R.Version()$arch)
   expect_identical(lsos(env),
                    data.frame(Name = c("y", "x", "z"),
                               Type = c("data.frame", "matrix", "integer"),
