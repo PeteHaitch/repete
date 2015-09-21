@@ -9,14 +9,11 @@ test_that("lsos() works", {
   env$x <- matrix(1:100, ncol = 4)
   env$y <- data.frame(a = letters[1:10], b = 10:1)
   env$z <- seq_len(10)
-  # TODO: Remove once test fixed on windows (see
-  # https://github.com/PeteHaitch/repete/issues/1)
-  print(lsos(env))
-  print(R.Version()$arch)
-  val <- lsos(env)
+
   # The size of objects differs on 32-bit and 64-bit platforms. I think this
   # conditional handles the situation appropriately (although it might fall
   # over on Solaris?)
+  val <- lsos(env)
   if (identical(R.Version()$arch, "x86_64")) {
     expect_identical(val,
                      data.frame(Name = c("y", "x", "z"),
