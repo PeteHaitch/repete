@@ -22,6 +22,8 @@
 #' by the \code{base::\link[base]{length}} of the object and the'number of
 #' columns' is set to \code{NA}.
 #'
+#' @importFrom pryr object_size
+#' @importFrom utils capture.output
 .ls.objects <- function(pos = 1,
                         pattern,
                         order_by,
@@ -39,9 +41,9 @@
   obj_mode <- napply(names, mode)
   obj_type <- ifelse(is.na(obj_class), obj_mode, obj_class)
   obj_prettysize <- napply(names, function(x) {
-    capture.output(print(object.size(x), units = "auto"))
+    capture.output(print(pryr::object_size(x), units = "auto"))
   })
-  obj_size <- napply(names, object.size)
+  obj_size <- napply(names, pryr::object_size)
   obj_dim <- t(napply(names, function(x) {
     as.numeric(dim(x))[1:2]
   }))
@@ -82,7 +84,7 @@
 #' Pikal and David Hinds from the r-help mailing list circa 2004.
 #'
 #' @seealso The function wraps the output of \code{base::\link[base]{ls}} and
-#' \code{utils::\link[utils]{object.size}} into a pretty format.
+#' \code{pryr::\link[pryr]{object_size}} into a pretty format.
 #'
 #' @return A \code{base::\link[base]{data.frame}} containing the objects' names,
 #' types, sizes, 'pretty' sizes, number of rows, and number of columns. If the
