@@ -24,13 +24,11 @@ test_that("lsos() works", {
                                 Columns = c(2, 4, NA),
                                 stringsAsFactors = FALSE))
   } else if (identical(R.Version()$arch, "i386")) {
-    print(val)
     expect_identical(val,
                      data.frame(Name = c("y", "x", "z"),
                                 Type = c("data.frame", "matrix", "integer"),
-                                Size = c(1112, 512, 72),
-                                PrettySize = c("1.1 kB", "512 B",
-                                               "72 B"),
+                                Size = c(1020, 512, 72),
+                                PrettySize = c("1.02 kB", "512 B", "72 B"),
                                 Rows = c(10, 25, 10),
                                 Columns = c(2, 4, NA),
                                 stringsAsFactors = FALSE))
