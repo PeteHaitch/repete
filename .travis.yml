@@ -3,8 +3,13 @@ r:
   - oldrel
   - release
   - devel
-sudo: false
 cache: packages
 os:
   - linux
-  - osx
+  - osx # Only use r-latest (r-release) is available on OS X
+        # https://github.com/travis-ci/travis-ci/issues/5783
+# Used for code coverage testing with covr and codecov
+r_github_packages:
+  - jimhester/covr
+after_success:
+  - Rscript -e 'covr::codecov()'
