@@ -1,2 +1,4 @@
 name: Repete GitHub Template
-create_dir: true
+description: >
+  My template for documents to be published as GitHub Flavored Markdown.
+create_dir: false
