@@ -30,4 +30,3 @@ spwt(rpois(10000, 5) + rnorm(10000, sd = 0.1), rpois(10000, 5) + rnorm(10000, sd
 \author{
 Peter Hickey based on recommendation of Kasper Hansen
 }
-

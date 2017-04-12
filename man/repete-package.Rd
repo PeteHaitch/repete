@@ -7,4 +7,3 @@
 \description{
 Miscellaneous R functions that I find useful.
 }
-

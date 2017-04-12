@@ -31,13 +31,12 @@ lsos()
 }
 
 }
+\seealso{
+The function wraps the output of \code{base::\link[base]{ls}} and
+\code{pryr::\link[pryr]{object_size}} into a pretty format.
+}
 \author{
 Based on Dirk Eddelbuetal's post to Stack Overflow
 (\url{http://stackoverflow.com/q/1358003}) in which he in turn credits Petr
 Pikal and David Hinds from the r-help mailing list circa 2004.
 }
-\seealso{
-The function wraps the output of \code{base::\link[base]{ls}} and
-\code{pryr::\link[pryr]{object_size}} into a pretty format.
-}
-

@@ -1,0 +1,14 @@
+---
+title: "Untitled"
+author: "Peter Hickey"
+date: "`r BiocStyle::doc_date()`"
+output:
+  github_document:
+    toc: true
+    toc_depth: 2
+---
+
+```{r, include=FALSE, setup}
+knitr::opts_chunk$set(echo = FALSE, comment = "#>", collapse = TRUE,
+                      message = FALSE, results = "hide", warning = FALSE)
+```

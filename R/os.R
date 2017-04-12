@@ -1,4 +1,7 @@
-#' A shortcut to pryr::object_size
+#' A shortcut to \code{pryr::object_size}
+#' @inheritParams pryr::object_size
 #' @importFrom pryr object_size
 #' @export
-os <- pryr::object_size
+os <- function(..., env) {
+  pryr::object_size(..., env)
+}

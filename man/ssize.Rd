@@ -20,4 +20,3 @@ A nested named list with the size of the objects in each slot
 \description{
 Size of objects in slots of S4 object
 }
-
