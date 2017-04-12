@@ -8,7 +8,7 @@ output:
     toc_depth: 2
 ---
 
-```{r, include=FALSE, setup}
+```{r, include = FALSE, setup}
 knitr::opts_chunk$set(echo = FALSE, comment = "#>", collapse = TRUE,
                       message = FALSE, results = "hide", warning = FALSE)
 ```
