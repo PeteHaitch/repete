@@ -11,5 +11,7 @@ os:
 # Used for code coverage testing with covr and codecov
 r_github_packages:
   - jimhester/covr
+bioc_packages:
+  - BiocStyle
 after_success:
   - Rscript -e 'covr::codecov()'
