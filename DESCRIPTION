@@ -1,6 +1,6 @@
 Package: repete
 Title: Peter Hickey's R Code
-Version: 0.0.0.9006
+Version: 0.0.0.9007
 Authors@R: "Peter Hickey <peter.hickey@gmail.com> [aut, cre]"
 Description: Miscellaneous R functions that I find useful.
 Imports:

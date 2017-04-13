@@ -4,7 +4,7 @@
 \alias{os}
 \title{A shortcut to \code{pryr::object_size}}
 \usage{
-os(..., env)
+os(..., env = parent.frame())
 }
 \arguments{
 \item{...}{Set of objects to compute total size.}

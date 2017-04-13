@@ -2,6 +2,4 @@
 #' @inheritParams pryr::object_size
 #' @importFrom pryr object_size
 #' @export
-os <- function(..., env) {
-  pryr::object_size(..., env)
-}
+os <- pryr::object_size
