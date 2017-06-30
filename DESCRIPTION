@@ -1,13 +1,14 @@
 Package: repete
 Title: Peter Hickey's R Code
-Version: 0.0.0.9007
+Version: 0.0.0.9008
 Authors@R: "Peter Hickey <peter.hickey@gmail.com> [aut, cre]"
 Description: Miscellaneous R functions that I find useful.
 Imports:
     scales,
     pryr,
     methods,
-    BiocStyle
+    BiocStyle,
+    GenomicRanges
 License: MIT + file LICENSE
 LazyData: true
 URL: https://github.com/PeteHaitch/repete
