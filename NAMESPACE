@@ -2,6 +2,7 @@
 
 export(lsos)
 export(os)
+export(pairsWithCor)
 export(spwt)
 export(ssize)
 export(sw)

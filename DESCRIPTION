@@ -1,6 +1,6 @@
 Package: repete
 Title: Peter Hickey's R Code
-Version: 0.0.0.9008
+Version: 0.0.0.9009
 Authors@R: "Peter Hickey <peter.hickey@gmail.com> [aut, cre]"
 Description: Miscellaneous R functions that I find useful.
 Imports:
@@ -8,7 +8,9 @@ Imports:
     pryr,
     methods,
     BiocStyle,
-    GenomicRanges
+    GenomicRanges,
+    graphics,
+    stats
 License: MIT + file LICENSE
 LazyData: true
 URL: https://github.com/PeteHaitch/repete
