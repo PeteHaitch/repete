@@ -2,17 +2,17 @@
 % Please edit documentation in R/os.R
 \name{os}
 \alias{os}
-\title{A shortcut to \code{pryr::object_size}}
+\title{A shortcut to \code{lobstr::obj_size}}
 \usage{
 os(..., env = parent.frame())
 }
 \arguments{
-\item{...}{Set of objects to compute total size.}
+\item{...}{Set of objects to compute size.}
 
 \item{env}{Environment in which to terminate search. This defaults to the
 current environment so that you don't include the size of objects that
 are already stored elsewhere.}
 }
 \description{
-A shortcut to \code{pryr::object_size}
+A shortcut to \code{lobstr::obj_size}
 }

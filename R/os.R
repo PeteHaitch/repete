@@ -1,5 +1,5 @@
-#' A shortcut to \code{pryr::object_size}
-#' @inheritParams pryr::object_size
-#' @importFrom pryr object_size
+#' A shortcut to \code{lobstr::obj_size}
+#' @inheritParams lobstr::obj_size
+#' @importFrom lobstr obj_size
 #' @export
-os <- pryr::object_size
+os <- lobstr::obj_size

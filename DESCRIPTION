@@ -1,11 +1,11 @@
 Package: repete
 Title: Peter Hickey's R Code
-Version: 0.0.0.9010
+Version: 0.0.0.9011
 Authors@R: "Peter Hickey <peter.hickey@gmail.com> [aut, cre]"
 Description: Miscellaneous R functions that I find useful.
 Imports:
     scales,
-    pryr,
+    lobstr,
     methods,
     BiocStyle,
     GenomicRanges,
@@ -18,3 +18,4 @@ BugReports: https://github.com/PeteHaitch/repete/issues
 Suggests:
     testthat
 RoxygenNote: 6.0.1
+Remotes: r-lib/lobstr
